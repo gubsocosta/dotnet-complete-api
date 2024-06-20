@@ -82,7 +82,7 @@ public class FornecedoresController : MainController
 
         var result = await _fornecedorService.Remover(id);
 
-        if(!result) BadRequest();
+        if(!result) return BadRequest();
 
         return Ok(fornecedor);
     }
