@@ -1,4 +1,5 @@
 using DevIO.Business.Interfaces;
+using DevIO.Business.Services;
 using DevIO.Data.Context;
 using DevIO.Data.Repository;
 
@@ -10,6 +11,7 @@ public static class DependencyInjectionConfig
     {
         builder.Services.AddScoped<MeuDbContext>();
         builder.Services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+        builder.Services.AddScoped<IFornecedorService, FornecedorService>();
         
         return builder;
     }
