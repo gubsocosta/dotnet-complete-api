@@ -6,4 +6,4 @@ The project includes:
 - DB integration
 - documentation generation with swagger
 - optimization configs with extension methods
-- multitier architecture
+- multilayer architecture
